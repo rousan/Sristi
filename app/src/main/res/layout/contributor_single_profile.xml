@@ -1,0 +1,523 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/profile_pic_imageview"
+                android:src="@drawable/me2"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <View
+                android:alpha="0.5"
+                android:background="#000"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/top_name_title"
+                    android:padding="2dp"
+                    android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                    android:textStyle="bold"
+                    android:textColor="@color/OTHERS_ONE_COLOR"
+                    android:text="Ariyan Khan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/top_short_note"
+                    android:padding="2dp"
+                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                    android:textStyle="bold"
+                    android:textColor="@color/PARAGRAPH_COLOR"
+                    android:text="App Developer &amp; Designer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/theme_bk_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+            <View
+                android:background="#000"
+                android:alpha="0.4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/control_panel"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:gravity="center"
+                                android:paddingRight="15dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:id="@+id/name_change_btn"
+                                    android:background="@drawable/action_bar_icon_state"
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:padding="5dp"
+                                    android:text="Change"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <LinearLayout
+                                    android:id="@+id/name_change_btn_panel2"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:background="@drawable/action_bar_icon_state"
+                                    android:padding="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:src="@drawable/ab_icon_edit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="20dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:background="@drawable/peofile_separator"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:padding="15dp"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/email_title"
+                                    android:padding="2dp"
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:textStyle="bold"
+                                    android:textColor="#fff"
+                                    android:text="Email"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/email_short_note"
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:paddingLeft="2dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#f4f4f4"
+                                    android:text="ariyankhan46@gmail.com"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="visible"
+                                android:gravity="center"
+                                android:paddingRight="15dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:id="@+id/email_explore_btn_panel"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:background="@drawable/action_bar_icon_state"
+                                    android:padding="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:src="@drawable/ic_email_white_48dp"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:background="@drawable/peofile_separator"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:padding="15dp"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/profile_link_title"
+                                    android:padding="2dp"
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:textStyle="bold"
+                                    android:textColor="#fff"
+                                    android:text="Profile Link"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/profile_link_short_note"
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:textStyle="bold"
+                                    android:paddingLeft="2dp"
+                                    android:textColor="#f4f4f4"
+                                    android:text="ariyankhan.wordpress.com"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="visible"
+                                android:gravity="center"
+                                android:paddingRight="15dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:id="@+id/browser_open_btn_panel"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:background="@drawable/action_bar_icon_state"
+                                    android:padding="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:src="@drawable/ic_open_in_browser_white_48dp"
+                                        android:layout_width="21dp"
+                                        android:layout_height="21dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:background="@drawable/peofile_separator"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"/>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:padding="15dp"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/mobile_title"
+                                    android:padding="2dp"
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:textStyle="bold"
+                                    android:textColor="#fff"
+                                    android:text="Mobile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/mobile_short_note"
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:paddingLeft="2dp"
+                                    android:textStyle="bold"
+                                    android:textColor="#f4f4f4"
+                                    android:text="+91 8116840517"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:paddingRight="15dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:id="@+id/call_explore_btn_panel"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:background="@drawable/action_bar_icon_state"
+                                    android:padding="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:src="@drawable/ic_call_white_48dp"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:background="@drawable/peofile_separator"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"/>
+
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:padding="15dp"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/college_name_title"
+                                    android:padding="2dp"
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:textStyle="bold"
+                                    android:textColor="#fff"
+                                    android:text="College"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/college_name_short_note"
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:textStyle="bold"
+                                    android:textColor="#f4f4f4"
+                                    android:paddingLeft="2dp"
+                                    android:text="Jalpaiguri Government Engineering College"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:gravity="center"
+                                android:paddingRight="15dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:visibility="gone"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:id="@+id/college_name_change_btn"
+                                    android:background="@drawable/action_bar_icon_state"
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:padding="5dp"
+                                    android:text="Change"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <LinearLayout
+                                    android:id="@+id/college_name_change_btn_panel2"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:background="@drawable/action_bar_icon_state"
+                                    android:padding="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:src="@drawable/ab_icon_edit"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="20dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:background="@drawable/peofile_separator"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"/>
+
+                        <LinearLayout
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/follow_me_on_title"
+                                android:padding="@dimen/PARAGRAPH_FONT_SIZE"
+                                android:textStyle="bold"
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:text="Follow Me On"
+                                android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_gravity="center_vertical"
+                                android:paddingRight="15dp"
+                                android:gravity="right"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <View
+                                        android:id="@+id/googleplus_btn"
+                                        android:layout_gravity="center_vertical"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/google_plus_btn_state_changed_bg"
+                                        android:layout_width="27dp"
+                                        android:layout_height="27dp"/>
+
+                                    <View
+                                        android:id="@+id/fb_btn"
+                                        android:layout_gravity="center_vertical"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/facebook_btn_state_changed_bg"
+                                        android:layout_width="27dp"
+                                        android:layout_height="27dp"/>
+
+                                    <View
+                                        android:id="@+id/twitter_btn"
+                                        android:layout_gravity="center_vertical"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:layout_marginRight="10dp"
+                                        android:background="@drawable/twitter_btn_state_changed_bg"
+                                        android:layout_width="27dp"
+                                        android:layout_height="27dp"/>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

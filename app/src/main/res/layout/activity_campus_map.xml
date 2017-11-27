@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_bk_1"
+    android:id="@+id/root"
+    tools:context="org.sristi.sristi.CampusMapActivity">
+
+    <View
+        android:alpha="0.5"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#77000000">
+
+            <ImageView
+                android:id="@+id/back_imageeview"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_arrow_back_white_48dp"
+                android:layout_width="26dp"
+                android:layout_height="26dp" />
+
+            <TextView
+                android:textColor="@color/PARAGRAPH_COLOR"
+                android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="Campas Map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <View
+            android:background="@drawable/separator_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/address_title"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_marginBottom="1dp"
+                            android:text="Address"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                            android:textColor="@color/HEADINGS_COLOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Jalpaiguri Gov. Engg. College,\nJalpaiguri,\nWest Bengal,\nPincode-735102\nIndia"
+                            android:textColor="@color/PARAGRAPH_COLOR"
+                            android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/global_pos_title"
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_marginBottom="1dp"
+                            android:text="Global Position"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                            android:textColor="@color/HEADINGS_COLOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Lattitude :  26.5434772"
+                            android:textColor="@color/PARAGRAPH_COLOR"
+                            android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Longitude :  88.72052559999997"
+                            android:textColor="@color/PARAGRAPH_COLOR"
+                            android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/places_title"
+                            android:layout_marginBottom="1dp"
+                            android:text="Nearby Places"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                            android:textColor="@color/HEADINGS_COLOR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="Rajdeeghi, Mini Indoor Stadium, \nTeesta Spur, Siliguri City Centre, \nDanguajhar Tea Estate"
+                            android:textColor="@color/PARAGRAPH_COLOR"
+                            android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:id="@+id/view_map"
+                        android:fontFamily="sans-serif"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textSize="@dimen/SMALL_FONT_SIZE"
+                        android:textColor="@color/PARAGRAPH_COLOR"
+                        android:background="@drawable/btn_bg_1_state"
+                        android:text="Explore In Map"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

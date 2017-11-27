@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_bk_1"
+    tools:context="org.sristi.sristi.IntroductionActivity">
+
+    <View
+        android:background="#000"
+        android:alpha="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:textColor="@color/PARAGRAPH_COLOR"
+                android:text="SIGN IN"
+                android:textSize="16sp"
+                android:background="@drawable/btn_normal_bg_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/BUTTON_HEIGHT" />
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/PARAGRAPH_COLOR"
+                android:text="SIGN UP"
+                android:textSize="16sp"
+                android:background="@drawable/btn_normal_bg_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/BUTTON_HEIGHT" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+

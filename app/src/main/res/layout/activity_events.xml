@@ -1,0 +1,1127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_bk_1"
+    android:id="@+id/root"
+    tools:context="org.sristi.sristi.EventsActivity">
+
+    <View
+        android:background="#000"
+        android:alpha="0.6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <RelativeLayout
+               android:padding="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="#55000000">
+
+               <ImageView
+                   android:id="@+id/back_imageeview"
+                   android:layout_marginLeft="15dp"
+                   android:src="@drawable/ic_arrow_back_white_48dp"
+                   android:layout_width="26dp"
+                   android:layout_height="26dp" />
+
+           </RelativeLayout>
+
+           <RelativeLayout
+               android:background="#55000000"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   android:layout_centerInParent="true"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:id="@+id/image_logo"
+                       android:background="@drawable/round_theme"
+                       android:layout_marginBottom="5dp"
+                       android:padding="20dp"
+                       android:layout_centerHorizontal="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <ImageView
+                           android:src="@drawable/app_icon_2"
+                           android:layout_width="30dp"
+                           android:layout_height="30dp" />
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:paddingBottom="25dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <TextView
+                           android:layout_marginTop="2dp"
+                           android:textAllCaps="true"
+                           android:id="@+id/sristi_title"
+                           android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                           android:padding="0dp"
+                           android:textColor="@color/PARAGRAPH_COLOR"
+                           android:gravity="center"
+                           android:text="Sristi Events 2K16"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content" />
+
+                   </LinearLayout>
+
+
+               </LinearLayout>
+
+           </RelativeLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1">
+
+           <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <LinearLayout
+                       android:clickable="true"
+                       android:focusable="true"
+                       android:background="@drawable/event_panel_bg_state"
+                       android:id="@+id/robotix_panel"
+                       android:padding="15dp"
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <RelativeLayout
+                           android:layout_gravity="center_vertical"
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="100dp">
+
+                           <ImageView
+                               android:scaleType="centerCrop"
+                               android:src="@drawable/robotix_event_pic"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent" />
+
+                           <View
+                               android:background="#000"
+                               android:alpha="0.5"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"/>
+
+                           <RelativeLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent">
+
+                               <TextView
+                                   android:id="@+id/robotix_event_title"
+                                   android:layout_centerInParent="true"
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                                   android:text="Robotix"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </RelativeLayout>
+
+                       </RelativeLayout>
+
+                       <LinearLayout
+                           android:layout_marginLeft="10dp"
+                           android:layout_gravity="center_vertical"
+                           android:layout_width="0dp"
+                           android:layout_weight="1.5"
+                           android:paddingLeft="10dp"
+                           android:orientation="vertical"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_marginBottom="5dp"
+                               android:textColor="@color/HEADINGS_COLOR"
+                               android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                               android:gravity="left"
+                               android:text="Events Under"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content" />
+
+                           <LinearLayout
+                               android:id="@+id/eagle_claw_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="Eagle Claw"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/robo_soccer_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="Robo Soccer"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/mission_entente_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="Mission Entente"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/firebird_ii_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="FireBird II"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+                   <View
+                       android:layout_marginBottom="10dp"
+                       android:background="@drawable/separator_bg"
+                       android:layout_width="match_parent"
+                       android:layout_height="2dp"/>
+
+                   <LinearLayout
+                       android:id="@+id/management_event_panel"
+                       android:padding="15dp"
+                       android:clickable="true"
+                       android:focusable="true"
+                       android:background="@drawable/event_panel_bg_state"
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <RelativeLayout
+                           android:layout_gravity="center_vertical"
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="100dp">
+
+                           <ImageView
+                               android:scaleType="centerCrop"
+                               android:src="@drawable/management_event_pic"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent" />
+
+                           <View
+                               android:background="#000"
+                               android:alpha="0.5"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"/>
+
+                           <RelativeLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent">
+
+                               <TextView
+                                   android:id="@+id/management_event_title"
+                                   android:layout_centerInParent="true"
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                                   android:text="Management"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </RelativeLayout>
+
+                       </RelativeLayout>
+
+                       <LinearLayout
+                           android:layout_marginLeft="10dp"
+                           android:layout_gravity="center_vertical"
+                           android:layout_width="0dp"
+                           android:layout_weight="1.5"
+                           android:paddingLeft="10dp"
+                           android:orientation="vertical"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_marginBottom="10dp"
+                               android:textColor="@color/HEADINGS_COLOR"
+                               android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                               android:gravity="left"
+                               android:text="Events Under"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content" />
+
+                           <LinearLayout
+                               android:id="@+id/afs_1_0_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="AFS 1.0"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/devils_advocate_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="Devil's Advocate"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/incognito_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="Incognito"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/picture_perception_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="Picture Perception"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+                   <View
+                       android:layout_marginBottom="10dp"
+                       android:background="@drawable/separator_bg"
+                       android:layout_width="match_parent"
+                       android:layout_height="2dp"/>
+
+
+                   <LinearLayout
+                       android:id="@+id/gamezone_event_panel"
+                       android:padding="15dp"
+                       android:clickable="true"
+                       android:focusable="true"
+                       android:background="@drawable/event_panel_bg_state"
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <RelativeLayout
+                           android:layout_gravity="center_vertical"
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="100dp">
+
+                           <ImageView
+                               android:scaleType="centerCrop"
+                               android:src="@drawable/game_zone_event_pic"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent" />
+
+                           <View
+                               android:background="#000"
+                               android:alpha="0.5"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"/>
+
+                           <RelativeLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent">
+
+                               <TextView
+                                   android:id="@+id/game_zone_event_title"
+                                   android:layout_centerInParent="true"
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                                   android:text="Game Zone"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </RelativeLayout>
+
+                       </RelativeLayout>
+
+                       <LinearLayout
+                           android:layout_marginLeft="10dp"
+                           android:layout_gravity="center_vertical"
+                           android:layout_width="0dp"
+                           android:layout_weight="1.5"
+                           android:paddingLeft="10dp"
+                           android:orientation="vertical"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_marginBottom="10dp"
+                               android:textColor="@color/HEADINGS_COLOR"
+                               android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                               android:gravity="left"
+                               android:text="Events Under"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content" />
+
+                           <LinearLayout
+                               android:id="@+id/fifa_11_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="FIFA 11"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/cs_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="CS 1.6"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/nfs_mw_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="NFS MW"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/call_of_duty_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="Call of Duty 1"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+                   <View
+                       android:layout_marginBottom="10dp"
+                       android:background="@drawable/separator_bg"
+                       android:layout_width="match_parent"
+                       android:layout_height="2dp"/>
+
+
+                   <LinearLayout
+                       android:id="@+id/technozion_event_panel"
+                       android:padding="15dp"
+                       android:clickable="true"
+                       android:focusable="true"
+                       android:background="@drawable/event_panel_bg_state"
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <RelativeLayout
+                           android:layout_gravity="center_vertical"
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="100dp">
+
+                           <ImageView
+                               android:scaleType="centerCrop"
+                               android:src="@drawable/technozion_event_pic"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent" />
+
+                           <View
+                               android:background="#000"
+                               android:alpha="0.5"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"/>
+
+                           <RelativeLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent">
+
+                               <TextView
+                                   android:id="@+id/technozion_event_title"
+                                   android:layout_centerInParent="true"
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                                   android:text="Technozion"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </RelativeLayout>
+
+                       </RelativeLayout>
+
+                       <LinearLayout
+                           android:layout_marginLeft="10dp"
+                           android:layout_gravity="center_vertical"
+                           android:layout_width="0dp"
+                           android:layout_weight="1.5"
+                           android:paddingLeft="10dp"
+                           android:orientation="vertical"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_marginBottom="5dp"
+                               android:textColor="@color/HEADINGS_COLOR"
+                               android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                               android:gravity="left"
+                               android:text="Events Under"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content" />
+
+                           <LinearLayout
+                               android:id="@+id/its_binary_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="It's Binary"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/tech_quiz_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="Tech Quiz"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/technically_yours_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="Technically Yours"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/what_the_hack_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="What the Hack"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+                   <View
+                       android:layout_marginBottom="10dp"
+                       android:background="@drawable/separator_bg"
+                       android:layout_width="match_parent"
+                       android:layout_height="2dp"/>
+
+                   <LinearLayout
+                       android:id="@+id/sherlocked_event_panel"
+                       android:padding="15dp"
+                       android:clickable="true"
+                       android:focusable="true"
+                       android:background="@drawable/event_panel_bg_state"
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <RelativeLayout
+                           android:layout_gravity="center_vertical"
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="100dp">
+
+                           <ImageView
+                               android:scaleType="centerCrop"
+                               android:src="@drawable/sherlocked_event_pic"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent" />
+
+                           <View
+                               android:background="#000"
+                               android:alpha="0.5"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"/>
+
+                           <RelativeLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent">
+
+                               <TextView
+                                   android:id="@+id/sherlocked_event_title"
+                                   android:layout_centerInParent="true"
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                                   android:text="Sherlocked"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </RelativeLayout>
+
+                       </RelativeLayout>
+
+                       <LinearLayout
+                           android:layout_marginLeft="10dp"
+                           android:layout_gravity="center_vertical"
+                           android:layout_width="0dp"
+                           android:layout_weight="1.5"
+                           android:paddingLeft="10dp"
+                           android:orientation="vertical"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_marginBottom="10dp"
+                               android:textColor="@color/HEADINGS_COLOR"
+                               android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                               android:gravity="left"
+                               android:text="Events Under"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content" />
+
+                           <LinearLayout
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:id="@+id/play_sherlocked_btn_panel"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="Play Sherlocked"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+                   <View
+                       android:layout_marginBottom="10dp"
+                       android:background="@drawable/separator_bg"
+                       android:layout_width="match_parent"
+                       android:layout_height="2dp"/>
+
+                   <LinearLayout
+                       android:id="@+id/j_buzz_event_panel"
+                       android:padding="15dp"
+                       android:clickable="true"
+                       android:focusable="true"
+                       android:background="@drawable/event_panel_bg_state"
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <RelativeLayout
+                           android:layout_gravity="center_vertical"
+                           android:layout_width="0dp"
+                           android:layout_weight="1"
+                           android:layout_height="100dp">
+
+                           <ImageView
+                               android:scaleType="centerCrop"
+                               android:src="@drawable/j_buzz_event_pic"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent" />
+
+                           <View
+                               android:background="#000"
+                               android:alpha="0.5"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"/>
+
+                           <RelativeLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent">
+
+                               <TextView
+                                   android:id="@+id/tj_buzz_event_title"
+                                   android:layout_centerInParent="true"
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                                   android:text="J-Buzz"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </RelativeLayout>
+
+                       </RelativeLayout>
+
+                       <LinearLayout
+                           android:layout_marginLeft="10dp"
+                           android:layout_gravity="center_vertical"
+                           android:layout_width="0dp"
+                           android:layout_weight="1.5"
+                           android:paddingLeft="10dp"
+                           android:orientation="vertical"
+                           android:layout_height="wrap_content">
+
+                           <TextView
+                               android:layout_marginBottom="10dp"
+                               android:textColor="@color/HEADINGS_COLOR"
+                               android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                               android:gravity="left"
+                               android:text="Events Under"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content" />
+
+                           <LinearLayout
+                               android:id="@+id/lens_flair_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="Lens Flair"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/sudoku_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="Sudoku"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/chess_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="Chess"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                           <LinearLayout
+                               android:id="@+id/bridge_the_gap_event_btn_panel"
+                               android:clickable="true"
+                               android:focusable="true"
+                               android:background="@drawable/action_bar_icon_state"
+                               android:orientation="horizontal"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content">
+
+                               <ImageView
+                                   android:layout_marginRight="2dp"
+                                   android:layout_gravity="center"
+                                   android:src="@drawable/op"
+                                   android:layout_width="23dp"
+                                   android:layout_height="23dp" />
+
+                               <TextView
+                                   android:textColor="@color/PARAGRAPH_COLOR"
+                                   android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                   android:gravity="center"
+                                   android:text="Bridge The Gap"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content" />
+
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+                   <View
+                       android:layout_marginBottom="10dp"
+                       android:background="@drawable/separator_bg"
+                       android:layout_width="match_parent"
+                       android:layout_height="2dp"/>
+
+
+               </LinearLayout>
+
+           </ScrollView>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

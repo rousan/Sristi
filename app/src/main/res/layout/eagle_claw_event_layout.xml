@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:src="@drawable/notif1"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <View
+                android:alpha="0.2"
+                android:background="@color/THEME_COLOR_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:padding="20dp"
+                android:orientation="horizontal"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/top_name_title"
+                        android:padding="2dp"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/PARAGRAPH_COLOR"
+                        android:text="Eagle Claw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/top_short_note"
+                        android:padding="2dp"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/PARAGRAPH_COLOR"
+                        android:text="Event under Robotix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/contact_us_btn"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="@drawable/action_bar_icon_state"
+                        android:padding="5dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/PARAGRAPH_COLOR"
+                        android:text="Contact Us"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/theme_bk_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+            <View
+                android:background="#000"
+                android:alpha="0.4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="15dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginBottom="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:text="Introduction"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <View
+                                    android:background="@color/HEADINGS_COLOR"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginBottom="3dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/op2"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp" />
+
+                                <TextView
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/PARAGRAPH_COLOR"
+                                    android:text="Introduction"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:visibility="visible"
+                                android:text="@string/EAGLE_CLAW_EVENT_INTRODUCTION"
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:textSize="15sp"
+                                android:paddingLeft="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:padding="15dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginBottom="20dp"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textAllCaps="true"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:text="Problem Statement"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <View
+                                    android:background="@color/HEADINGS_COLOR"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:visibility="visible"
+                                android:layout_marginBottom="10dp"
+                                android:text="The task is to devise and fabricate a manually controlled (wired/wireless) robot that can traverse an arena, by using a zipline, picking up packages and placing them perfectly in the slots."
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:textSize="15sp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_marginBottom="3dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/op2"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp" />
+
+                                <TextView
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:textSize="17sp"
+                                    android:layout_marginBottom="5dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/PARAGRAPH_COLOR"
+                                    android:text="Team Specifications"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:visibility="visible"
+                                android:text="1. A team may consist of a maximum of 4 members."
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="3dp"
+                                android:paddingLeft="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:visibility="visible"
+                                android:layout_marginBottom="3dp"
+                                android:text="2. Students from different educational institutes can form a team."
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:textSize="15sp"
+                                android:paddingLeft="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:visibility="visible"
+                                android:layout_marginBottom="3dp"
+                                android:text="3. All students with a valid identity card(college id/library id) of their respective educational institutes are eligible to participate."
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:textSize="15sp"
+                                android:paddingLeft="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_marginBottom="3dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/op2"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp" />
+
+                                <TextView
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:textSize="17sp"
+                                    android:layout_marginBottom="5dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/PARAGRAPH_COLOR"
+                                    android:text="Bot Specifications"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:visibility="visible"
+                                android:text="1. Each team is allowed to have only one bot (wired/wireless)."
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="3dp"
+                                android:paddingLeft="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:visibility="visible"
+                                android:text="2. Bot must be within 35x35x45(in cm)."
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="3dp"
+                                android:paddingLeft="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:visibility="visible"
+                                android:text="3. Flying or any other method of mobility which leads the robot to lose contact with the rope(i.e the zipline) is not allowed."
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="3dp"
+                                android:paddingLeft="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:visibility="visible"
+                                android:text="4. The bot must be fully manual with all powering and motoring mechanisms self contained."
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="3dp"
+                                android:paddingLeft="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_marginBottom="3dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_gravity="center_vertical"
+                                    android:src="@drawable/op2"
+                                    android:layout_width="23dp"
+                                    android:layout_height="23dp" />
+
+                                <TextView
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="5dp"
+                                    android:textSize="17sp"
+                                    android:layout_marginBottom="5dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/PARAGRAPH_COLOR"
+                                    android:text="Arena Specifications"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:visibility="visible"
+                                android:text="1. The arena for Eagle Claw consists the dimensions 300x100x100(in cms), refer to the diagram for better understandings."
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="3dp"
+                                android:paddingLeft="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:visibility="visible"
+                                android:text="2. There will be three boxes initially in the first round of the event. Each boxes of different colours and posses the dimensions "
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="3dp"
+                                android:paddingLeft="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:visibility="visible"
+                                android:text="2. There will be three boxes initially in the first round of the event. Each boxes of different colours and posses the dimensions 8x8x8(in cm). Hook mechanism can be used to lift the boxes as hooking threads will be connected with the boxes."
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="3dp"
+                                android:paddingLeft="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:visibility="visible"
+                                android:text="3. There will be a platform of 20cm width 50 cm from the ground, where the boxes will be present."
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="3dp"
+                                android:paddingLeft="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:visibility="visible"
+                                android:text="4. There will be holes of different colours and of dimensions 10cm length, 10cm width and 4cm height, where the blocks have to be placed. "
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="3dp"
+                                android:paddingLeft="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:visibility="visible"
+                                android:text="5. Zip line (or the rope) will be placed above the platform (Robots will be using the zip line only and will not be able to get supported by the platform where the boxes remain)."
+                                android:textColor="@color/PARAGRAPH_COLOR"
+                                android:textSize="15sp"
+                                android:layout_marginBottom="3dp"
+                                android:paddingLeft="40dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

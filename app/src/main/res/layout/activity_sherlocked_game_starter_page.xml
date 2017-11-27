@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/root"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/sherlocked_event_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:background="#000"
+        android:alpha="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/sign_in_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@drawable/ic_perm_identity_white_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:padding="3dp"
+                    android:id="@+id/log_in_title"
+                    android:textStyle="bold"
+                    android:textColor="@color/HEADINGS_COLOR"
+                    android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                    android:text="Not Logged In"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/log_in_short_note"
+                    android:textStyle="bold"
+                    android:textColor="@color/PARAGRAPH_COLOR"
+                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                    android:text="You must log in to play, So goto log in page, and after logged in return this page again."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/BUTTON_HEIGHT">
+
+                    <TextView
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:textSize="@dimen/SMALL_FONT_SIZE"
+                        android:id="@+id/log_in_btn"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/btn_bg_1_state"
+                        android:gravity="center"
+                        android:textColor="@color/PARAGRAPH_COLOR"
+                        android:text="Log In"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/start_page_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@drawable/ic_perm_identity_white_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:padding="3dp"
+                    android:id="@+id/start_page_title"
+                    android:textStyle="bold"
+                    android:textColor="@color/HEADINGS_COLOR"
+                    android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                    android:text="Welcome to Sherlocked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/start_page_short_note"
+                    android:textStyle="bold"
+                    android:textColor="@color/PARAGRAPH_COLOR"
+                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                    android:text="Play Sherlocked from app and enjoy, for any queries please contact with us"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/BUTTON_HEIGHT">
+
+                    <TextView
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:textSize="@dimen/SMALL_FONT_SIZE"
+                        android:id="@+id/start_geme_btn"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/btn_bg_1_state"
+                        android:gravity="center"
+                        android:textColor="@color/PARAGRAPH_COLOR"
+                        android:text="Start Play Game"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="#06060c">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#06060c">
+
+        <LinearLayout
+            android:padding="7dp"
+            android:background="#111123"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17dp"
+                android:textColor="#0b797b"
+                android:text="@string/faq_1_q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:paddingLeft="2dp"
+                android:paddingTop="2dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:text="@string/faq_1_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="7dp"
+            android:background="#111123"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17dp"
+                android:textColor="#0b797b"
+                android:text="@string/faq_2_q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:paddingLeft="2dp"
+                android:paddingTop="2dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:text="@string/faq_2_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="7dp"
+            android:background="#111123"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17dp"
+                android:textColor="#0b797b"
+                android:text="@string/faq_3_q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:paddingLeft="2dp"
+                android:paddingTop="2dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:text="@string/faq_3_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="7dp"
+            android:background="#111123"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17dp"
+                android:textColor="#0b797b"
+                android:text="@string/faq_4_q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:paddingLeft="2dp"
+                android:paddingTop="2dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:text="@string/faq_4_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="7dp"
+            android:background="#111123"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17dp"
+                android:textColor="#0b797b"
+                android:text="@string/faq_5_q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:paddingLeft="2dp"
+                android:paddingTop="2dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:text="@string/faq_5_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="7dp"
+            android:background="#111123"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17dp"
+                android:textColor="#0b797b"
+                android:text="@string/faq_6_q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:paddingLeft="2dp"
+                android:paddingTop="2dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:text="@string/faq_6_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="7dp"
+            android:background="#111123"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17dp"
+                android:textColor="#0b797b"
+                android:text="@string/faq_7_q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:paddingLeft="2dp"
+                android:paddingTop="2dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15dp"
+                android:textColor="#fff"
+                android:text="@string/faq_7_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+

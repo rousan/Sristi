@@ -1,0 +1,316 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theme_bk_1"
+    android:id="@+id/root"
+    android:scrollbars="vertical"
+    tools:context="org.sristi.sristi.ContactUsActivity">
+
+    <View
+        android:alpha="0.5"
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#77000000">
+
+            <ImageView
+                android:id="@+id/back_imageeview"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_arrow_back_white_48dp"
+                android:layout_width="26dp"
+                android:layout_height="26dp" />
+
+            <TextView
+                android:textColor="@color/PARAGRAPH_COLOR"
+                android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="Contact Us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <View
+            android:background="@drawable/separator_bg"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/email_tv"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Email"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                        android:textColor="@color/HEADINGS_COLOR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_marginRight="15dp"
+                            android:layout_gravity="center"
+                            android:text="mail@sristi.org"
+                            android:textColor="@color/PARAGRAPH_COLOR"
+                            android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:id="@+id/email_view_panel_1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_state_bg_contact_us"
+                            android:padding="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_email_white_48dp"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/mobile_tv"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Mobile"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                        android:textColor="@color/HEADINGS_COLOR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_marginRight="15dp"
+                            android:layout_gravity="center"
+                            android:text="+91 8348301952 (Anurag Sharma)"
+                            android:textColor="@color/PARAGRAPH_COLOR"
+                            android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:id="@+id/call_view_panel_1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_state_bg_contact_us"
+                            android:padding="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_call_white_48dp"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_marginRight="15dp"
+                            android:layout_gravity="center"
+                            android:text="+91 8116840517 (Rousan Ali)"
+                            android:textColor="@color/PARAGRAPH_COLOR"
+                            android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:id="@+id/call_view_panel_2"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_state_bg_contact_us"
+                            android:padding="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_call_white_48dp"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/address_tv"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Address"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                        android:textColor="@color/HEADINGS_COLOR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:fontFamily="sans-serif-condensed"
+                            android:layout_marginRight="15dp"
+                            android:layout_gravity="center"
+                            android:text="Jalpaiguri Govt. Engg. College,\nJalpaiguri,\nWest Bengal,\nPincode-735102\nIndia"
+                            android:textColor="@color/PARAGRAPH_COLOR"
+                            android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:id="@+id/direction_view_panel_1"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_state_bg_contact_us"
+                            android:padding="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_directions_white_48dp"
+                                android:layout_width="10dp"
+                                android:layout_height="10dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/we_are_on_tv"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_marginBottom="5dp"
+                        android:text="We are also on"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                        android:textColor="@color/HEADINGS_COLOR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <View
+                            android:id="@+id/instagram_btn"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/instagram"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"/>
+
+                        <View
+                            android:id="@+id/fb_btn"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/facebook_btn_state_changed_bg"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"/>
+
+                        <View
+                            android:id="@+id/twitter_btn"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/twitter_btn_state_changed_bg"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

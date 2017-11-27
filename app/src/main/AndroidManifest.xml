@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.sristi.sristi"
+    android:versionCode="20162"
+    android:versionName="1.0.1-ATOM" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon_2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AppLoadingActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IntroductionActivity"
+            android:label="@string/title_activity_introduction" >
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LoginRegisterActivity"
+            android:label="@string/title_activity_login_register"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AboutUsActivity"
+            android:label="@string/title_activity_about_us"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ContactUsActivity"
+            android:label="@string/title_activity_contact_us"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".HelpCentreActivity"
+            android:label="@string/title_activity_help_centre"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".FaqsActivity"
+            android:label="@string/title_activity_faqs" >
+        </activity>
+        <activity
+            android:name=".FaqShowingActivity"
+            android:label="@string/title_activity_faq_showing" >
+        </activity>
+        <activity
+            android:name=".EventsActivity"
+            android:label="@string/title_activity_events" >
+        </activity>
+        <activity
+            android:name=".CampusMapActivity"
+            android:label="@string/title_activity_campus_map" >
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".ContributorsActivity"
+            android:label="@string/title_activity_contributors" >
+        </activity>
+        <activity
+            android:name=".AboutAppActivity"
+            android:label="@string/title_activity_about_app" >
+        </activity>
+
+        <service
+            android:name=".EventUpdaterService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=".atomPool" >
+        </service>
+        <service
+            android:name=".AppUpdaterService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=".atomPool" >
+        </service>
+
+        <activity
+            android:name=".WebBrowserActivity"
+            android:label="@string/title_activity_web_browser" >
+        </activity>
+        <activity
+            android:name=".ScheduleActivity"
+            android:label="@string/title_activity_schedule" >
+        </activity>
+
+        <service
+            android:name=".FileDownloaderService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <receiver
+            android:name=".BootCompletedReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".UpdateCenterActivity"
+            android:label="@string/title_activity_update_center" >
+        </activity>
+        <activity
+            android:name=".UserProfileActivity"
+            android:label="@string/title_activity_user_profile" >
+        </activity>
+        <activity
+            android:name=".ContributorProfileActivity"
+            android:label="@string/title_activity_contributor_profile" >
+        </activity>
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity
+            android:name=".EventViewerActivity"
+            android:label="@string/title_activity_event_viewer" >
+        </activity>
+
+        <service
+            android:name=".SristiService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name=".SherlockedGameStarterPage"
+            android:label="@string/title_activity_sherlocked_game_starter_page" >
+        </activity>
+        <activity
+            android:name=".SherlockedGameActivity"
+            android:label="@string/title_activity_sherlocked_game" >
+        </activity>
+    </application>
+
+</manifest>

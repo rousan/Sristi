@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sherlocked v.1.0.1</title>
+    <link href="sherlocked_stylesheet.css" rel="stylesheet">
+  </head>
+  <body> 
+      
+      
+      <div id="body_mask"></div>
+      <div id="question_root_panel">
+          <div id="question_holder_panel">
+             <div class="level_title" style="margin-bottom:10px;">
+                It\'s the possibility of having a dream come true that makes life interesting
+              </div>
+              <div class="level_image_top_hint" style="margin-bottom:20px;margin-top:30px;" onmouseover="document.getElementById(\'hint\').style.opacity=1;" onmouseout="document.getElementById(\'hint\').style.opacity=0;">
+                 <img src="http://app.sristi.org.in/app/online_games/sherlocked/images/barc.jpg" width="50%">
+              </div>
+              <div class="hidden_hints_panel" style="margin-bottom:5px;opacity:0;" id="hint">
+                  Your mother died to save you. If there is one thing Voldemort cannot understand, it is love.
+              </div>
+              <div style="margin-top:40px;">
+                  <div class="footer_hints" style="margin-bottom:10px;">
+                 the divine charioteer died here
+              </div>
+              <div class="footer_sristi_copyright" style="margin-bottom:10px;">
+                  Sherlocked v1.0.1, ©SRISTI 16 Team.
+              </div>
+              </div>
+          </div>
+      </div>
+      
+      <div id="question_unavailable_panel">
+          <div id="questuin_unvl_mask"></div>
+          <div class="abs_middle" id="ques_unavl_middle_panel">
+              <div class="pink_heading">Question is unavailable</div>
+              <div class="text_panel">We are sorry to tell you that question is unavailble at this moment, so please refresh this page.</div>
+          </div>
+      </div>
+      
+      
+      
+<script>
+    
+    function displayQuestion(questionHtmlTxt) {
+        questionHtmlTxt = questionHtmlTxt.replace(/GJC4I7Y4GCFGFJEG/g, "\n");
+        document.getElementById("question_holder_panel").innerHTML = questionHtmlTxt;
+    }
+    
+    function visibleQuestionUnavailablePagePanel(visible) {
+        if(visible) {
+            document.getElementById("question_unavailable_panel").style.display = "block";
+        } else {
+            document.getElementById("question_unavailable_panel").style.display = "none";
+        }
+    }
+    
+    function clearQuestionPanel() {
+        document.getElementById("question_holder_panel").innerHTML = "";
+    }
+    
+   //displayQuestion('<div class="level_title" style="margin-bottom:10px">the serial killer Dexter Morgan</div><div class="level_image_top_hint" style="margin-bottom:20px;margin-top:30px" onmouseover="document.getElementById(\'hint\').style.opacity=1" onmouseout="document.getElementById(\'hint\').style.opacity=0"><img src="http://app.sristi.org.in/app/online_games/sherlocked/images/12.jpg" width="50%"></div><div class="hidden_hints_panel" style="margin-bottom:5px;opacity:0" id="hint">110010</div><div style="margin-top:40px"><div class="footer_hints" style="margin-bottom:10px">June 13, 2004</div><div class="footer_sristi_copyright" style="margin-bottom:10px">Sherlocked v1.0.1, ©SRISTI 16 Team.</div></div>');
+    
+</script>
+      
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="#FF00202B">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginBottom="0dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/design"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#fff"
+                        android:text="Developing and Design"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="17dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#fff"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingRight="15dp"
+                    android:background="#001a27"
+                    android:visibility="visible"
+                    android:paddingLeft="30dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginBottom="0dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="0dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/profile"
+                                android:layout_width="17dp"
+                                android:layout_height="17dp" />
+                            <TextView
+                                android:fontFamily="sans-serif-condensed"
+                                android:textSize="15dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#fff"
+                                android:text="@string/rousan_desin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:fontFamily="sans-serif-condensed"
+                                android:textSize="17dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#fff"
+                                android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingLeft="30dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/telephone2"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                                <TextView
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#fff"
+                                    android:text="@string/rousan_desin_tele"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/email2"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                                <TextView
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#fff"
+                                    android:text="@string/rousan_desin_email"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/whatsapp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                                <TextView
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#fff"
+                                    android:text="@string/rousan_desin_whatsapp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/facebook"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                                <TextView
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#fff"
+                                    android:text="@string/rousan_desin_fb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginBottom="0dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/co_ordinator"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#fff"
+                        android:text="Co-Oridinator and Volunteer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="17dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#fff"
+                        android:text=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingRight="15dp"
+                    android:background="#001a27"
+                    android:visibility="visible"
+                    android:paddingLeft="30dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginBottom="0dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="3dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/profile"
+                                android:layout_width="17dp"
+                                android:layout_height="17dp" />
+                            <TextView
+                                android:fontFamily="sans-serif-condensed"
+                                android:textSize="15dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#fff"
+                                android:text="@string/anurag_co"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:fontFamily="sans-serif-condensed"
+                                android:textSize="17dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#fff"
+                                android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingLeft="30dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/telephone2"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                                <TextView
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#fff"
+                                    android:text="@string/anurag_co_tele"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/email2"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                                <TextView
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#fff"
+                                    android:text="@string/rousan_desin_email"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/whatsapp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                                <TextView
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#fff"
+                                    android:text="@string/rousan_desin_whatsapp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/facebook"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                                <TextView
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#fff"
+                                    android:text="@string/rousan_desin_fb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:paddingRight="15dp"
+                    android:background="#001a27"
+                    android:visibility="visible"
+                    android:paddingLeft="30dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginBottom="0dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/profile"
+                                android:layout_width="17dp"
+                                android:layout_height="17dp" />
+                            <TextView
+                                android:fontFamily="sans-serif-condensed"
+                                android:textSize="15dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#fff"
+                                android:text="@string/ashish_co"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:fontFamily="sans-serif-condensed"
+                                android:textSize="17dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#fff"
+                                android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingLeft="30dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/telephone2"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                                <TextView
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#fff"
+                                    android:text="@string/ashish_co_tele"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/email2"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                                <TextView
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#fff"
+                                    android:text="@string/rousan_desin_email"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/whatsapp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                                <TextView
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#fff"
+                                    android:text="@string/rousan_desin_whatsapp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/facebook"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                                <TextView
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#fff"
+                                    android:text="@string/rousan_desin_fb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingRight="15dp"
+                    android:background="#001a27"
+                    android:visibility="visible"
+                    android:paddingLeft="30dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_marginBottom="0dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="7dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="5dp"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/profile"
+                                android:layout_width="17dp"
+                                android:layout_height="17dp" />
+                            <TextView
+                                android:fontFamily="sans-serif-condensed"
+                                android:textSize="15dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#fff"
+                                android:text="@string/nishit_co"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:fontFamily="sans-serif-condensed"
+                                android:textSize="17dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#fff"
+                                android:text=""
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:paddingLeft="30dp"
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/telephone2"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                                <TextView
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#fff"
+                                    android:text="@string/nishit_co_tele"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/email2"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                                <TextView
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#fff"
+                                    android:text="@string/rousan_desin_email"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/whatsapp"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                                <TextView
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#fff"
+                                    android:text="@string/rousan_desin_whatsapp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/facebook"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp" />
+                                <TextView
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:textSize="13dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="#fff"
+                                    android:text="@string/rousan_desin_fb"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

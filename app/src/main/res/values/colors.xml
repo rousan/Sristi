@@ -1,0 +1,47 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="APP_COLOR">#308cc8</color>
+
+    <color name="LEFT_DRAWER_ROOT_BG_COLOR">#ff010b1e</color>
+
+    <color name="LEFT_DRAWER_SIGN_IN_ROOT_BG_COLOR">#e6000107</color>
+
+    <color name="HOME_ROOT_BG_COLOR">#030106</color>
+
+    <color name="LEFT_DRAWER_ITEM_CLICKED_BG_COLOR">#aa4a4949</color>
+
+    <color name="LEFT_DRAWER_ITEM_PRESSED_COLOR">#ff008fbb</color>
+
+
+    <!-- Freeze Theme -->
+    <color name="FREEZE_THEME_COLOR_DEEP">#ff336799</color>
+    <color name="FREEZE_THEME_COLOR_MEDIUM">#ff4d9bb2</color>
+    <color name="FREEZE_THEME_COLOR_LIGHT">#ff58b0be</color>
+
+    <color name="THEME_COLOR_1">#ff6b396c</color>
+    <color name="THEME_COLOR_2">#ffc56394</color>
+    <color name="THEME_COLOR_3">#ff915885</color>
+    <color name="THEME_COLOR_4">#ffa85687</color>
+
+    <color name="HEADINGS_COLOR">#fffd657a</color>
+    <color name="PARAGRAPH_COLOR">#d8d8ed</color>
+    <color name="OTHERS_ONE_COLOR">#ff56d9e3</color>
+
+    <color name="CONTRIBUTORS_TITLE_COLOR">#ff585858</color>
+    <color name="CONTRIBUTORS_ITEM_COLOR">#ff585858</color>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+@font-face {
+    font-family: FJallaone;
+    src: url(fjallaone-regular.ttf);
+}
+
+@font-face {
+    font-family: Play;
+    src: url(play-regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-image: url(about_bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+
+#mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: black;
+    opacity: .75;
+}
+
+#main_content {
+    color: white;
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.author_title, .author_name {
+    text-align: center;
+}
+
+.author_title {
+    color: #fff;
+    font-size: 17px;
+    font-family: FJallaone;
+    text-decoration: underline;
+    text-shadow: 2px 2px #590c76;
+}
+
+.author_name {
+    color: #ffffff;
+    margin-top: 2px;
+    font-size: 15px;
+    font-family: Play;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

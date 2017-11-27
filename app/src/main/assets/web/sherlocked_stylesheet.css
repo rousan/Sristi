@@ -1,0 +1,242 @@
+@font-face {
+font-family: "OpenSans";
+src: url("OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "UnicaOne";
+    src: url("UnicaOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "AbelRegular";
+    src: url("Abel-Regular.ttf");
+}
+
+@font-face {
+    font-family: "MontserratRegular";
+    src: url("Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "NoticonsRegular;
+    src: url("Noticons-Regular.otf");
+}
+
+@font-face {
+    font-family: "PhilosopherRegular";
+    src: url("Philosopher-Regular.ttf");
+}
+
+@font-face {
+    font-family: "UnicaOne";
+    src: url("UnicaOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "PlayRegular";
+    src: url("Play-Regular.ttf");
+}
+
+
+@font-face {
+    font-family: "PTSansNarrowWebRegular";
+    src: url("PT_Sans-Narrow-Web-Regular.ttf");
+}
+
+@font-face {
+    font-family: "RajdhaniRegular";
+    src: url("Rajdhani-Regular.ttf");
+}
+
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("OpenSans-Bold.ttf");
+}
+@font-face {
+    font-family: "MTCORSVA";
+    src: url("MTCORSVA.ttf");
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url(sherlocked_event_pic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background: -o-linear-gradient(top, #6b396c, #d070a3);
+    background: -ms-linear-gradient(top, #6b396c, #d070a3);
+    background: -moz-linear-gradient(top, #6b396c, #d070a3);
+    background: -webkit-linear-gradient(top, #6b396c, #d070a3);
+    background: linear-gradient(top, #6b396c, #d070a3);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#body_mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+#question_root_panel {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+#question_holder_panel {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-top: 80px;
+    overflow: auto;
+    color: #fff;
+}
+
+#question_unavailable_panel {
+    display: none;
+    background: url("sherlocked_event_pic.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.abs_middle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.pink_heading {
+    text-align: center;
+    font-family: "OpenSansBold", sans-serif;
+    color: #fd657a;
+    font-size: 18px;
+    text-shadow: 0px 0px 4px grey;
+}
+
+#questuin_unvl_mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+#ques_unavl_middle_panel {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    z-index: 2;
+}
+
+
+.text_panel {
+    text-align: center;
+    font-family: "OpenSans", sans-serif;
+    color: #d8d8ed;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/**
+*******************************
+**/
+
+.level_title {
+    text-align: center;
+    font-family: "PTSansNarrowWebRegular", sans-serif;
+    color: #d8d8ed;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.level_decr_text_top_hint {
+    text-align: center;
+    font-family: "MTCORSVA", sans-serif;
+    color: #d8d8ed;
+    font-size: 19px;
+    box-sizing: border-box;
+}
+
+.footer_sristi_copyright {
+    text-align: center;
+    font-family: "PhilosopherRegular", sans-serif;
+    color: #d8d8ed;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.footer_hints {
+    text-align: center;
+    font-family: "NoticonsRegular", sans-serif;
+    color: #d8d8ed;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.hidden_hints_panel {
+    padding: 10px;
+    text-align: center;
+    font-family: "PlayRegular", sans-serif;
+    color: #d8d8ed;
+    font-size: 11px;
+    box-sizing: border-box;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+    transition: all 1s;
+}
+
+
+.level_image_top_hint {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+

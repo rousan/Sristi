@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:drawable="@drawable/google_plus_btn_pressed2" />
+    <item android:state_focused="true"
+        android:drawable="@drawable/goole_plus_normal2" />
+    <item android:state_hovered="true"
+        android:drawable="@drawable/google_plus_btn_pressed2" />
+    <item android:drawable="@drawable/goole_plus_normal2" />
+</selector>

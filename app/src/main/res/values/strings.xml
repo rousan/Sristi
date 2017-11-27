@@ -1,0 +1,211 @@
+<resources>
+    <string name="app_name">Sristi</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="open_dr">Open</string>
+    <string name="close_dr">Close</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="anurag_co">Anurag Sharma</string>
+    <string name="anurag_co_tele">+918348301952</string>
+
+    <string name="nishit_co">Nishit Khandelia</string>
+    <string name="nishit_co_tele">+917679430715</string>
+
+    <string name="ashish_co">VVS Ashish</string>
+    <string name="ashish_co_tele">+919474977737</string>
+
+    <string name="debtanu_co">Debtanu Bose</string>
+    <string name="debtanu_co_tele">+919474977737</string>
+
+    <string name="thripa_co">Subhajeet Thoripa</string>
+    <string name="thoripa_co_tele">+919474977737</string>
+
+    <string name="rousan_desin">Rousan Ali</string>
+    <string name="rousan_desin_tele">+918116840517</string>
+    <string name="rousan_desin_email">rousanali786@gmail.com</string>
+    <string name="rousan_desin_whatsapp">+918116840517</string>
+    <string name="rousan_desin_fb">fakeyounger</string>
+
+    <string-array name="contributor_names">
+        <item>Rousan Ali</item>
+        <item>Anurag Sharma</item>
+        <item>Debtanu Gupta</item>
+        <item>Subhajit Thoripa</item>
+        <item>VVS Ashish</item>
+        <item>Nishit Khandelia</item>
+        <item>Sayan Dey</item>
+        <item>Siddhant Gupta</item>
+        <item>Soumyadeep Sana</item>
+    </string-array>
+
+
+    <string-array name="contributor_contribution_purpose">
+        <item>App Developer &amp; Web Designer</item>
+        <item>Sristi Co-Ordinator &amp; Sponsor Head</item>
+        <item>Web Designer</item>
+        <item>Web Designer</item>
+        <item>Sristi Chief Co-ordinator </item>
+        <item>Sristi Co-Ordinator &amp; Treasurer</item>
+        <item>Sristi Chief Co-ordinator</item>
+        <item>Sristi Co-Ordinator &amp; Sponsor Head</item>
+        <item>Sristi Co-Ordinator &amp; Treasurer</item>
+    </string-array>
+
+    <string-array name="contributor_emails">
+        <item>rousanali786@gmail.com</item>
+        <item>anuragsharma@gmail.com</item>
+        <item>debtanugupta177@gmail.com</item>
+        <item>subhajeetthoripa@gmail.com</item>
+        <item>vvsashish96@gmail.com</item>
+        <item>nishitk2010@gmail.com</item>
+        <item>sayan22heaven@gmail.com</item>
+        <item>siddhantgupta1.3.8@gmail.com</item>
+        <item>soumyadeepsana3@gmail.com</item>
+    </string-array>
+
+    <string-array name="contributor_mobiles">
+        <item>+91 8116840517</item>
+        <item>+91 8348301952</item>
+        <item>+91 94753846262</item>
+        <item>+91 8016265857</item>
+        <item>+91 9474977737</item>
+        <item>+91 7679430715</item>
+        <item>+91 8967787667</item>
+        <item>+91 9903757396</item>
+        <item>91 9804931583</item>
+    </string-array>
+
+    <string-array name="contributor_profile_links">
+        <item>https://www.facebook.com/fakeyounger</item>
+        <item>https://www.facebook.com/sharmakanurag?fref=ts</item>
+        <item>https://www.facebook.com/debtanu.gupta?fref=ts</item>
+        <item>https://www.facebook.com/Subhajit.Daripa?fref=ts</item>
+        <item>https://www.facebook.com/vvs.ashish?fref=ts</item>
+        <item>https://www.facebook.com/nishit.jgec?fref=ts</item>
+        <item>https://www.facebook.com/sayan.dey.7967?fref=ts</item>
+        <item>https://www.facebook.com/siddhant.gupta.182?fref=ts</item>
+        <item>https://www.facebook.com/soumyadeep.sana?fref=ts</item>
+    </string-array>
+
+
+
+    <string name="app_about">dada<i>dadas</i></string>
+
+    <string name="faq_1_q">How to register for Sristi 2k16?</string>
+    <string name="faq_1_a">To participate in Sristi \'16, you must register. Registration Fee is Rs. 250 with additional Rs. 50 as security deposit per participant before the events starts. The security money will be refunded as soon as the fest gets over. Participants are need to register in the register panel of Sristi 2k16 website by Signing up. </string>
+
+    <string name="faq_2_q">What to do after registration?</string>
+    <string name="faq_2_a">After registration, you can sign-in with required Username and password. A User Profile will be opened in which the instructions regarding all the fest details will be properly given. You have to bring the SRISTI I-CARD before coming to attend the fest. Option for Downloading your I-CARD is given in the User Profile. </string>
+
+    <string name="faq_3_q"> Why there is a need to register?</string>
+    <string name="faq_3_a">As told above, you can sign-in to your profile after registration only. This allows you to have your SRISTI I-CARD which is required for the participation in the events or the availing accommodation. You can participate in the only Online Treasure Hunt Game of Sristi ’16 which is free of cost. Note: Only the registered users can participate in the Online Game. </string>
+
+    <string name="faq_4_q">How to pay the registration fee?</string>
+    <string name="faq_4_a">There is no online mode payment. Participants can report to campus and can do the payment by cash there itself thus, completing the registration formalities after online registration itself. The registration fee is Rs. 300 per participant including the caution money of Rs. 50. That will include participation in all the events and competitions (except Exhibition), and the accommodation. </string>
+
+    <string name="faq_5_q">What about accommodation facility?</string>
+    <string name="faq_5_a">And as for accommodation, accommodation will be provided for free by the Sristi \'16 by the Organizing Committee. Just you have to carry the I-CARD and the registration slip with yourself which will be provided to you after the payment. However, accommodation will be provided on the first come first serve basis. Refreshment facility is not included in accommodation. </string>
+
+    <string name="faq_6_q">How would we get to know about description of the event?</string>
+    <string name="faq_6_a">The website is provided with all the description of the event. Stay updated, and you will get to know the schedule of each event very soon.</string>
+
+    <string name="faq_7_q">Is there anything I need to carry with myself at Sristi?</string>
+    <string name="faq_7_a">You must need to carry your SRISTI I-CARD with yourself to participate at any of the event. You have to take care of your own belongings if you are carrying some. For missing of any of your belongings, Sristi Committee is not responsible for the same. </string>
+    <string name="title_activity_app_loading">AppLoadingActivity</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_introduction">IntroductionActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_login_register">LoginRegisterActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_contact_us">ContactUsActivity</string>
+    <string name="title_activity_help_centre">HelpCentreActivity</string>
+
+    <string name="HELP_TEXT">If you face any problem or if you have any query or if you have any technical or any others suggestions, feedback, please report us. We will response through email as soon as possible.</string>
+    <string name="title_activity_faqs">FaqsActivity</string>
+    <string name="title_activity_faq_showing">FaqShowingActivity</string>
+    <string name="title_activity_events">EventsActivity</string>
+    <string name="title_activity_campus_map">CampusMapActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string-array name="home_slide_animation_rate_seconds">
+
+        <item>1s</item>
+        <item>2s</item>
+        <item>3s</item>
+        <item>4s</item>
+        <item>5s</item>
+        <item>6s</item>
+        <item>7</item>
+        <item>8s</item>
+        <item>9s</item>
+        <item>10s</item>
+
+    </string-array>
+
+
+    <string-array name="colllge_names_suggestions">
+
+        <item>Jalpaiguri Government Engineering College</item>
+        <item>Jadavpur University</item>
+        <item>North Bengal University</item>
+        <item>JGEC</item>
+
+    </string-array>
+
+
+    <string-array name="updates_syncing_frequency">
+
+        <item>10min</item>
+        <item>20min</item>
+        <item>30min</item>
+        <item>40min</item>
+        <item>50min</item>
+        <item>60min</item>
+        <item>70min</item>
+        <item>80min</item>
+
+    </string-array>
+
+    <string name="APP_SHARE_TEXT">Sristi 2\'16,\nThe Largest techfest in North Bengal.\nKindly Share this app and help us to distribute Sristi.\nDownload Link here : http://sristi.org.in,\nThank you very much, have a nice day.</string>
+
+    <string name="COPYRIGHT_TEXT">All Rights Reserved &#169; 2016</string>
+    <string name="title_activity_contributors">ContributorsActivity</string>
+    <string name="title_activity_about_app">AboutAppActivity</string>
+    <string name="title_activity_web_browser">WebBrowserActivity</string>
+    <string name="title_activity_schedule">ScheduleActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_update_center">UpdateCenterActivity</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="title_activity_contributor_profile">ContributorProfileActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_event_viewer">EventViewerActivity</string>
+
+
+    <string name="EAGLE_CLAW_EVENT_INTRODUCTION">The rich legacy of SRISTI gets a new expression in manual robotics. Here is an event that stimulates minds to innovate themselves and practically realize their ideas to achieve new heights. As you all know about the Eagle, it has sharp visions and can achieve great heights, but, more importantly it has a strong pair of Claws which help them to snatch almost anything they want anytime. We have this manual competition which is all about the perfection and efficiency. Follow the path as fast as possible, clinch the objects and place them perfectly while maintaining a sheer control over the zipline and survive the atmosphere.</string>
+    <string name="EAGLE_CLAW_EVENT_TEAM_SPECIFICATIONS">1.	A team may consist of a maximum of 4 members.
+2.	Students from different educational institutes can form a team.
+3.	All students with a valid identity card(college id/library id) of their respective educational institutes are eligible to participate.</string>
+    <string name="title_activity_sherlocked_game_starter_page">SherlockedGameStarterPage</string>
+    <string name="title_activity_sherlocked_game">SherlockedGameActivity</string>
+
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+

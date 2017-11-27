@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sristi | 2K16</title>
+    <style>
+        
+        @font-face {
+           font-family: "OpenSans";
+           src: url("OpenSans-Regular.ttf");
+         }
+        
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            height: 100%;
+            background: white;
+        }
+        
+        body {
+            height: 100%;
+            background: white;
+        }
+        
+        #content {
+            position: fixed;
+            width: 100%;
+            padding: 5px 50px;
+            top: 50%;
+            left: 50%;
+             -o-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        
+        #heading, #description {
+            text-align: center;
+            font-family: "OpenSans", sans-serif;
+        }
+        
+        #heading {
+            margin-top: 6px;
+            margin-bottom: 1px;
+            font-size: 20px;
+        }
+        
+        #description {
+            margin-bottom: 8px;
+            font-size: 12px;
+        }
+        
+        #img {
+            max-height: 70px;
+            margin-left: 50%;
+            -o-transform: translate(-50%, 0%);
+            -moz-transform: translate(-50%, 0%);
+            -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+        }
+        
+        #link a {
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+            padding: 6px 30px;
+            font-size: 15px;
+            color: #fff !important;
+            transition: all 0.5s;
+            text-decoration: none;
+            background: #e5185e;
+            border-radius: 5px;
+            margin-left: 50%;
+            -o-transform: translate(-50%, 0%);
+            -moz-transform: translate(-50%, 0%);
+            -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+            font-family: "OpenSans", sans-serif;
+        }
+        
+        #link a:hover {
+            background: #600524;
+        }
+        
+    </style>
+      <script>
+          
+          function refreshAction() {
+              EJI.refreshPage();
+          }
+          
+      </script>
+  </head>
+  <body> 
+      
+      <div id="content">
+          <img id="img" src="connection_error.png">
+          <div id="heading">Connection Error</div>
+          <div id="description">Please check your internet connection</div>
+          <div id="link">
+              <a href="javascript:void(refreshAction());">Refresh</a>
+          </div>
+      </div>
+      
+      
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

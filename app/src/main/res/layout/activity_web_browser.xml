@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.sristi.sristi.WebBrowserActivity">
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/wv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></WebView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/refresh_btn_panel"
+            android:elevation="7dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:background="@drawable/btn_bg_1_pressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_refresh_white_48dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/theme_bk_1"
+        android:visibility="gone"
+        android:id="@+id/loader_holder_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:clickable="true"
+            android:focusable="true"
+            android:background="#000"
+            android:alpha="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:max="100"
+                    android:progress="30"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/loader_text"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@color/PARAGRAPH_COLOR"
+                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                    android:text="Loading Content, Please Wait..."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+            android:background="@drawable/theme_bk_1"
+            android:visibility="visible"
+            android:id="@+id/error_showing_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <View
+            android:clickable="true"
+            android:focusable="true"
+            android:background="#000"
+            android:alpha="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+                android:padding="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_portable_wifi_off_white_48dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:padding="1dp"
+                    android:id="@+id/connection_error_title"
+                    android:textStyle="bold"
+                    android:textColor="@color/PARAGRAPH_COLOR"
+                    android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                    android:text="Connection Error"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/connection_error_short_note"
+                    android:textStyle="bold"
+                    android:textColor="@color/PARAGRAPH_COLOR"
+                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                    android:text="No internet connection available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:paddingRight="20dp"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/BUTTON_HEIGHT">
+
+                    <TextView
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:textSize="@dimen/SMALL_FONT_SIZE"
+                        android:id="@+id/connection_error_refresh_btn"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/btn_bg_1_state"
+                        android:gravity="center"
+                        android:textColor="@color/PARAGRAPH_COLOR"
+                        android:text="Refresh"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="@dimen/SMALL_FONT_SIZE"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:id="@+id/connection_error_settings_explore_btn"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/btn_bg_1_state"
+                        android:gravity="center"
+                        android:textColor="@color/PARAGRAPH_COLOR"
+                        android:text="Turn On"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

@@ -1,0 +1,395 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@drawable/settings_bg"
+    tools:context="org.sristi.sristi.SettingsActivity">
+
+
+    <View
+        android:background="#000"
+        android:alpha="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#77000000">
+
+                <ImageView
+                    android:id="@+id/back_imageeview"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_arrow_back_white_48dp"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp" />
+
+                <TextView
+                    android:textColor="@color/PARAGRAPH_COLOR"
+                    android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:text="Settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <View
+                android:background="@drawable/separator_bg"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/settings_panel_download_over_wifi"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@drawable/settings_panel_bg_state"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginRight="10dp"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/doanload_over_wifi_h"
+                                    android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:text="Download Over Only WI-FI"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:textColor="@color/PARAGRAPH_COLOR"
+                                    android:text="All events will be downloaded only over Wi-Fi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/imageview_download_over_wifi"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/check_box_unchecked"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:background="@drawable/separator_settings"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/settings_panel_home_slide_animation_on_off"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@drawable/settings_panel_bg_state"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginRight="10dp"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/home_slide_anim_on_off"
+                                    android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:text="Home Slide Animation ON/OFF"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:textColor="@color/PARAGRAPH_COLOR"
+                                    android:text="Off animation releases much RAM"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/settings_home_slide_anim_imageview"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/check_box_unchecked"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:background="@drawable/separator_settings"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/settings_panel_home_slide_animation_speed"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@drawable/settings_panel_bg_state"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginRight="10dp"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/home_slide_ani_speed"
+                                    android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:text="Home Slide Animation Speed"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:textColor="@color/PARAGRAPH_COLOR"
+                                    android:text="Set home slide animation's animate speed"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <Spinner
+                                android:entries="@array/home_slide_animation_rate_seconds"
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/spinner_home_slide_anim_rate"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"></Spinner>
+
+                        </LinearLayout>
+
+                        <View
+                            android:background="@drawable/separator_settings"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/settings_panel_sign_sign_up"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@drawable/settings_panel_bg_state"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginRight="10dp"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/sign_signup"
+                                    android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:text="Sign In/Sign Up"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:textColor="@color/PARAGRAPH_COLOR"
+                                    android:text="Sign in if you are not signed in or Sign Up"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:background="@drawable/separator_settings"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/settings_panel_syncing_frequency"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@drawable/settings_panel_bg_state"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginRight="10dp"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/syncing_fr"
+                                    android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:text="Syncing Frequency"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:textColor="@color/PARAGRAPH_COLOR"
+                                    android:text="Syncing rate of current events or activity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <Spinner
+                                android:layout_gravity="center_vertical"
+                                android:id="@+id/spinner_refresh_syncing_frequency"
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"></Spinner>
+
+                        </LinearLayout>
+
+                        <View
+                            android:background="@drawable/separator_settings"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"/>
+
+                        <LinearLayout
+                            android:id="@+id/settings_panel_update_events"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@drawable/settings_panel_bg_state"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginRight="10dp"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/event_updates_chceck"
+                                    android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:text="Update Events"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:textColor="@color/PARAGRAPH_COLOR"
+                                    android:text="Fetch current events or activity"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:background="@drawable/separator_settings"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"/>
+
+
+                        <LinearLayout
+                            android:id="@+id/settings_panel_check_app_update"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:background="@drawable/settings_panel_bg_state"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_marginRight="10dp"
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/check_app_updtes"
+                                    android:textSize="@dimen/HEADINGS_FONT_SIZE"
+                                    android:textColor="@color/HEADINGS_COLOR"
+                                    android:text="Check Updates"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:textSize="@dimen/PARAGRAPH_FONT_SIZE"
+                                    android:textColor="@color/PARAGRAPH_COLOR"
+                                    android:text="All time stay updated for new features"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
